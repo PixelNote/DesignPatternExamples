@@ -18,6 +18,7 @@ En este problema se implemento el patrón de diseño __Factory Method__. Suponga
 
 Sin embargo, podemos identificar un code-smell en cuanto a que dentro de la interfaz Taco se tendrán una serie de if y else if para primero identificar que clase debe ser llamada para preparar el pedido, así:
 
+```Java
 if (”Mexicano”) {
 
 taco = new TacoMexicano();
@@ -31,7 +32,7 @@ taco = new TacoMixto();
 taco = new TacoVegetariano()
 
 }
-
+```
 Por lo que, esto claramente viola el principio Open/Closed, ya que cada vez que se quiera añadir o quitar un sabor, se tendrá que acceder a la interfaz Taco directamente para su modificación.
 --------------------------------
 ### Patrón estructural
