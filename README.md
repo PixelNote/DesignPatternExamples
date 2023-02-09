@@ -34,6 +34,7 @@ taco = new TacoVegetariano()
 }
 ```
 Por lo que, esto claramente viola el principio Open/Closed, ya que cada vez que se quiera añadir o quitar un sabor, se tendrá que acceder a la interfaz Taco directamente para su modificación.
+
 --------------------------------
 ### Patrón estructural
 
